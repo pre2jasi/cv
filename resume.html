@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume Project</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>DevOps Project: Deployment of Digital Resume</h1>
+
+            <ul>
+                <li><a href="https://github.com/pre2jasi/cv">Source code</a></li>
+            </ul>
+            <p>This project showcases my DevOps skills, demonstrating the deployment of a Digital Resume with end-to-end automation. I forked <a href="https://github.com/divanov11/Digital-Resume">divanov11's Digital Resume repository</a> and made necessary modifications to customize it for my CV.</p>
+        
+        <p>For better DNS control, I purchased the domain plutopilot.com from Google Domains and managed it using AWS Route 53. I configured a certificate for plutopilot.com with AWS Certificate Manager to ensure compatibility with Route 53.</p>
+
+        <p>The website was uploaded to an Amazon S3 bucket, and to automate the deployment process, I set up an Amazon CodePipeline. This pipeline is linked to my forked GitHub repository, triggering updates in the S3 bucket whenever changes are pushed.</p>
+
+        <p>To serve the website to users, I utilized AWS CloudFront in front of the S3 bucket. This seamless DevOps flow, from git push to AWS Code Commit and AWS Code Deploy, ultimately updates the Amazon S3 bucket hosting the site.</p>
+
+        <img src="assets/images/pipeline-cv.png" alt="Diagram" style="max-width: 100%; height: auto; padding: 10px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); opacity: 0.95; border: none;">
+
+        <ul>
+            <li>🚀 This project exemplifies a typical DevOps workflow, showcasing skills in automation, cloud services, and version control.</li>
+            <li>🔒 It underscores the importance of security and proper DNS management in deploying web applications.</li>
+            <li>🌐 The combination of S3, CodePipeline, and CloudFront demonstrates a robust AWS-based infrastructure setup.</li>
+        </ul>
+    </div>
+</body>
+</html>
